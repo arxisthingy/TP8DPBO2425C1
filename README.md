@@ -22,6 +22,11 @@ Proyek ini tidak menggunakan framework eksternal (selain Bootstrap untuk UI) dan
 * Router sederhana (Front Controller) untuk menangani semua permintaan.
 * Interaksi database yang aman menggunakan PDO.
 
+## ERD
+
+<img width="906" height="357" alt="erd" src="https://github.com/user-attachments/assets/54dcfefe-3f3d-40a8-b343-67f08e5ae70a" />
+
+
 ## Struktur MVC
 
 Aplikasi ini secara ketat mengikuti pola MVC:
@@ -73,4 +78,9 @@ TP8DPBO2425C1/
 ├── README.md
 └── tp_mvc25.sql
 ```
+
+## Dokumentasi Program
+
+https://github.com/user-attachments/assets/2496b398-1955-4290-9e7e-6efcc7984267
+
 
