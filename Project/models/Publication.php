@@ -21,7 +21,7 @@ class Publication extends Model
     {
         $title = $data['title'];
         $journal_name = $data['journal_name'];
-        $year = $data['year'];
+        $year = $data['publication_year'];
         $lecturer_id = $data['lecturer_id'];
 
         $query = "INSERT INTO publications (title, journal_name, publication_year, lecturer_id)
@@ -35,7 +35,7 @@ class Publication extends Model
         $id = $data['id'];
         $title = $data['title'];
         $journal_name = $data['journal_name'];
-        $year = $data['year'];
+        $year = $data['publication_year'];
         $lecturer_id = $data['lecturer_id'];
 
         $query = "UPDATE publications
