@@ -1,5 +1,4 @@
 </main>
-
 <footer class="container text-center mt-5 mb-3">
     <p class="text-muted">&copy; 2025 jokos</p>
 </footer>

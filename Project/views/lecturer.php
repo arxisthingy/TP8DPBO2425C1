@@ -1,4 +1,5 @@
 <?php
+// lecturer view
 $isEditMode = isset($data_to_edit);
 $formAction = $isEditMode ? 'index.php?controller=lecturer&action=update' : 'index.php?controller=lecturer&action=store';
 ?>

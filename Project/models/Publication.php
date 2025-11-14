@@ -1,8 +1,10 @@
 <?php
 require_once 'Model.php';
 
+// publication class model
 class Publication extends Model
 {
+    // methods for publication model
     function getPublication()
     {
         $query = "SELECT p.*, l.name AS lecturer_name
@@ -11,12 +13,14 @@ class Publication extends Model
         return $this->execute($query);
     }
 
+    // method to get publication by id
     function getPublicationById($id)
     {
         $query = "SELECT * FROM publications WHERE id = ?";
         return $this->execute($query, [$id]);
     }
 
+    // method to add a new publication
     function add($data)
     {
         $title = $data['title'];
@@ -30,6 +34,7 @@ class Publication extends Model
         return $this->execute($query);
     }
 
+    // method to update an existing publication
     function update($data)
     {
         $id = $data['id'];
@@ -45,6 +50,7 @@ class Publication extends Model
         return $this->execute($query);
     }   
 
+    // method to delete a publication
     function delete($id)
     {
         $query = "DELETE FROM publications WHERE id = $id";

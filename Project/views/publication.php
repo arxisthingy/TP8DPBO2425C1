@@ -1,4 +1,5 @@
 <?php
+// publication view
 $isEditMode = isset($data_to_edit);
 $formAction = $isEditMode ? 'index.php?controller=publication&action=update' : 'index.php?controller=publication&action=store';
 ?>
