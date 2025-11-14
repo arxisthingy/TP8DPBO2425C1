@@ -40,36 +40,36 @@ Aplikasi ini secara ketat mengikuti pola MVC:
 
 ## Struktur Folder
 ```
-TP8DPBO2425C1 
-├─ Dokumentasi
-│  ├─ Diagram.png
-│  └─ Record.mp4
-├─ Project
-│  ├─ assets
+TP8DPBO2425C1
+Project
+assets
 │  │  ├─ bootstrap.bundle.min.js
 │  │  ├─ bootstrap.min.css
 │  │  ├─ bootstrap.min.js
-│  │  ├─ jquery.min.js
+jquery.min.js
 │  │  └─ popper.min.js
 │  ├─ config
 │  │  └─ connection.php
 │  ├─ controllers
 │  │  ├─ CourseController.php
-│  │  ├─ DepartmentController.php
-│  │  └─ LecturerController.php
+│  │  ├─ HomeController.php
+│  │  ├─ LecturerController.php
+│  │  └─ PublicationController.php
 │  ├─ index.php
 │  ├─ models
 │  │  ├─ Course.php
-│  │  ├─ Department.php
 │  │  ├─ Lecturer.php
-│  │  └─ Model.php
+Model.php
+│  │  └─ Publication.php
 │  └─ views
-│     ├─ courses.php
-│     ├─ departments.php
-│     ├─ lecturers.php
-│     └─ templates
-│        ├─ header.php
-│        └─ script.php
-├─ README.md
-└─ tp_mvc25.sql
+│     ├─ course.php
+│     ├─ home.php
+layout
+│     │  ├─ footer.php
+│     │  ├─ header.php
+│     │  └─ nav.php
+│     ├─ lecturer.php
+│     └─ publication.php
+README.md
+tp_mvc25.sql
 ```
