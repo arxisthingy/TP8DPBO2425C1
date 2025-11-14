@@ -23,6 +23,22 @@ Proyek ini tidak menggunakan framework eksternal (selain Bootstrap untuk UI) dan
 * Interaksi database yang aman menggunakan PDO.
 
 ## Struktur MVC
+
+Aplikasi ini secara ketat mengikuti pola MVC:
+
+* **Model** (`models/`)
+
+    Bertanggung jawab atas semua interaksi database (koneksi PDO, kueri SQL). Berisi *base model* (`Model.php`) dan model spesifik (`Lecturer.php`, `Course.php`, `Publication.php`). Menyediakan fungsi-fungsi seperti `getLecturer()`, `add()`, `update()`, dan `delete()`.
+
+* **View** (`views/`)
+
+    Bertanggung jawab atas presentasi (UI) kepada pengguna. Terdiri dari file-file *template* (`layout/header.php`, `footer.php`) dan file view utama (`home.php`, `lecturer.php`, dll.). Menerima data dari Controller untuk ditampilkan dalam format HTML/Bootstrap.
+
+* **Controller** (`controllers/`)
+
+    Bertindak sebagai perantara antara Model dan View. Menerima input dari pengguna (melalui `index.php`). Memanggil metode yang sesuai di Model untuk mengambil atau memanipulasi data. Memuat View yang relevan dan mengirimkan data yang diperlukan ke View tersebut.
+
+## Struktur Folder
 ```
 TP8DPBO2425C1 
 ├─ Dokumentasi
@@ -57,18 +73,3 @@ TP8DPBO2425C1
 ├─ README.md
 └─ tp_mvc25.sql
 ```
-
-Aplikasi ini secara ketat mengikuti pola MVC:
-
-* **Model** (`models/`)
-
-    Bertanggung jawab atas semua interaksi database (koneksi PDO, kueri SQL). Berisi *base model* (`Model.php`) dan model spesifik (`Lecturer.php`, `Course.php`, `Publication.php`). Menyediakan fungsi-fungsi seperti `getLecturer()`, `add()`, `update()`, dan `delete()`.
-
-* **View** (`views/`)
-
-    Bertanggung jawab atas presentasi (UI) kepada pengguna. Terdiri dari file-file *template* (`layout/header.php`, `footer.php`) dan file view utama (`home.php`, `lecturer.php`, dll.). Menerima data dari Controller untuk ditampilkan dalam format HTML/Bootstrap.
-
-* **Controller** (`controllers/`)
-
-    Bertindak sebagai perantara antara Model dan View. Menerima input dari pengguna (melalui `index.php`). Memanggil metode yang sesuai di Model untuk mengambil atau memanipulasi data. Memuat View yang relevan dan mengirimkan data yang diperlukan ke View tersebut.
-
