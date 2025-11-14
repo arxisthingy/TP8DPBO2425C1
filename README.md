@@ -40,36 +40,37 @@ Aplikasi ini secara ketat mengikuti pola MVC:
 
 ## Struktur Folder
 ```
-TP8DPBO2425C1
-Project
-assets
-│  │  ├─ bootstrap.bundle.min.js
-│  │  ├─ bootstrap.min.css
-│  │  ├─ bootstrap.min.js
-jquery.min.js
-│  │  └─ popper.min.js
-│  ├─ config
-│  │  └─ connection.php
-│  ├─ controllers
-│  │  ├─ CourseController.php
-│  │  ├─ HomeController.php
-│  │  ├─ LecturerController.php
-│  │  └─ PublicationController.php
-│  ├─ index.php
-│  ├─ models
-│  │  ├─ Course.php
-│  │  ├─ Lecturer.php
-Model.php
-│  │  └─ Publication.php
-│  └─ views
-│     ├─ course.php
-│     ├─ home.php
-layout
-│     │  ├─ footer.php
-│     │  ├─ header.php
-│     │  └─ nav.php
-│     ├─ lecturer.php
-│     └─ publication.php
-README.md
-tp_mvc25.sql
+TP8DPBO2425C1/
+├── Project/
+│   ├── assets/
+│   │   ├── bootstrap.bundle.min.js
+│   │   ├── bootstrap.min.css
+│   │   ├── bootstrap.min.js
+│   │   ├── jquery.min.js
+│   │   └── popper.min.js
+│   ├── config/
+│   │   └── connection.php
+│   ├── controllers/
+│   │   ├── CourseController.php
+│   │   ├── HomeController.php
+│   │   ├── LecturerController.php
+│   │   └── PublicationController.php
+│   ├── index.php
+│   ├── models/
+│   │   ├── Course.php
+│   │   ├── Lecturer.php
+│   │   ├── Model.php
+│   │   └── Publication.php
+│   └── views/
+│       ├── course.php
+│       ├── home.php
+│       ├── layout/
+│       │   ├── footer.php
+│       │   ├── header.php
+│       │   └── nav.php
+│       ├── lecturer.php
+│       └── publication.php
+├── README.md
+└── tp_mvc25.sql
 ```
+
